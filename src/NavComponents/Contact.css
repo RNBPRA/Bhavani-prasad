@@ -1,0 +1,99 @@
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+  padding-right: 60px;
+}
+
+.right-section {
+  flex: 1;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+p {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.illustration {
+  max-width: 30%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left-section {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+}

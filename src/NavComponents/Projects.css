@@ -1,0 +1,117 @@
+.projects-container {
+  background-color: #f6f8fa;
+  padding: 8rem 4rem;
+}
+
+.projects-title {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  letter-spacing: -0.05em;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.project-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 2rem;
+}
+
+.project-title {
+  font-family: 'Inter', sans-serif;
+  color: #2d3748;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-family: 'Inter', sans-serif;
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #4299e1;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 4rem 2rem;
+  }
+
+  .projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
